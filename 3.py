@@ -5,9 +5,11 @@ while cont == "yes":
     cont = input("continue? ")
     if cont == "yes":
         hello += 1
-    elif cont == "y":
-        hello += 1
-    elif cont == "no":
-        break
-
+    else:
+        askcont= input("Are you Sure?" )
+        if askcont == "yes":
+            print("ok")
+            cont = "no"
+        if askcont == "no":
+            hello +=1
 
