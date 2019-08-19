@@ -1,18 +1,29 @@
 import time
-count = 0
+import random
+count = random.randint(1,100)
+count1= random.randint(1,10)
+count2= random.randint(1,10)
+count3= random.randint(1,10)
+count4= random.randint(1,10)
+count5= random.randint(1,10)
 while count < 9999999999999:
-    count += 1
-    print(count)
+    count += count1
+    countr= round(count,2)
+    print(countr)
     time.sleep(0.5)
-    count *= 2
-    print(count)
+    count -= count2
+    countr= round(count,2)
+    print(countr)
     time.sleep(0.5)
-    count *= 3
-    print(count)
+    count *= count3
+    countr= round(count,2)
+    print(countr)
     time.sleep(0.5)
-    count *= 4
-    print(count)
+    count /= count4
+    countr= round(count,2)
+    print(countr)
     time.sleep(0.5)
-    count *= 5
-    print(count)
+    count *= count5
+    countr= round(count,2)
+    print(countr)
     time.sleep(0.5)
